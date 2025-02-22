@@ -22,7 +22,7 @@ bot.command("start", async (ctx) => {
 Initially causing chaos by stealing coins 💰😈, he soon realized that working together is what makes the ride to the moon 🌕🚀 possible!
   `;
 
-  const picUrl = 'https://msdgbot.vercel.app/greenchiemain.jpg';  // public 폴더에 있는 이미지 파일 경로
+  const picUrl = 'https://greenchiebot.vercel.app/greenchiemain.jpg';  // public 폴더에 있는 이미지 파일 경로
 
   // ✅ GIF + 메시지 + 버튼을 한 번에 보냄
   await ctx.replyWithPhoto(picUrl, {
