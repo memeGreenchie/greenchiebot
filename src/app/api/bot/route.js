@@ -11,31 +11,21 @@ await bot.init();
 bot.command("start", async (ctx) => {
   const keyboard = {
     inline_keyboard: [
-      [{ text: "Play Game", web_app: { url: "https://mgdggame.vercel.app/" } }],  // 게임 링크 수정
-      [{ text: "Follow X", url: "https://x.com/MSDG_official" }],
+      [{ text: "Play Game", web_app: { url: "https://greenchie-b59ec.web.app/" } }],  // 게임 링크 수정
+      [{ text: "Follow X", url: "https://x.com/gncmeme" }],
       // [{ text: "Join Official Telegram", url: "https://t.me/fnfs_official" }],
     ],
   };
 
   const message = `
-✨ Welcome, Planescaller! 🔮
-
-The Aether Rift has opened, and powerful magic surges through the realms. You have been chosen to restore balance, solve arcane puzzles, and master the forces of Aetherion!
-
-🔥 What you can do here:
-🧩 Solve mystical puzzles to unlock powerful spells
-⚔️ Earn MSDG tokens through Play-to-Earn battles
-🌍 Shape the world of Aetherion with your strategy
-
-🚀 Your adventure begins now! Tap below to enter the realm of magic.
-
-🔹 [Start Your Journey]
+🎄🤪 Greenchie set out to prank the meme coins celebrating the holiday season, but along the way, he discovered that the real magic of crypto lies in joy 😆✨ and collaboration 🤝🚀.
+Initially causing chaos by stealing coins 💰😈, he soon realized that working together is what makes the ride to the moon 🌕🚀 possible!
   `;
 
-  const pngUrl = 'https://msdgbot.vercel.app/msdgpic.png';  // public 폴더에 있는 이미지 파일 경로
+  const picUrl = 'https://msdgbot.vercel.app/greenchiemain.jpg';  // public 폴더에 있는 이미지 파일 경로
 
   // ✅ GIF + 메시지 + 버튼을 한 번에 보냄
-  await ctx.replyWithPhoto(pngUrl, {
+  await ctx.replyWithPhoto(picUrl, {
     caption: message,
     reply_markup: keyboard,
     parse_mode: "Markdown",
